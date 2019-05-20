@@ -17,6 +17,11 @@ namespace SamuraiOmen
         public int power { get; set; }
         public int maxPower { get; set; }
 
+        public string heldItem { get; set; }
+        public int armourStats { get; set; }
+
+        public int gold { get; set; }
+
         public List<string> items { get; set; }
     }
 }

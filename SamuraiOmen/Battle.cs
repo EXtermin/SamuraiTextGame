@@ -8,5 +8,6 @@ namespace SamuraiOmen
 {
     class Battle
     {
+
     }
 }

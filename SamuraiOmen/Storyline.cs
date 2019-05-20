@@ -10,7 +10,12 @@ namespace SamuraiOmen
     {
        public void Start()
         {
-            Console.WriteLine("Welcome to Samurai Omen!");
+            Console.WriteLine("Welcome to Samurai Omen! \n" +
+                "This is a small Text game made by Iron Sword Studios \n" + 
+                "We hope you enjoy playing our game!");
+
+
+            Console.WriteLine("Samurai Omen......");
         }
     }
 }
