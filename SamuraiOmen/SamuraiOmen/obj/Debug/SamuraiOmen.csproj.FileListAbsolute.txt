@@ -1,0 +1,7 @@
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\bin\Debug\SamuraiOmen.exe.config
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\bin\Debug\SamuraiOmen.exe
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\bin\Debug\SamuraiOmen.pdb
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\obj\Debug\SamuraiOmen.csprojAssemblyReference.cache
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\obj\Debug\SamuraiOmen.csproj.CoreCompileInputs.cache
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\obj\Debug\SamuraiOmen.exe
+C:\Users\damia\AppData\Local\Temporary Projects\SamuraiOmen\obj\Debug\SamuraiOmen.pdb
