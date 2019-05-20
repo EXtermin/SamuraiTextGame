@@ -1,0 +1,6 @@
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\bin\Debug\SamuraiOmen.dll
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\bin\Debug\SamuraiOmen.pdb
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\obj\Debug\SamuraiOmen.csprojAssemblyReference.cache
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\obj\Debug\SamuraiOmen.csproj.CoreCompileInputs.cache
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\obj\Debug\SamuraiOmen.dll
+D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\obj\Debug\SamuraiOmen.pdb

@@ -8,6 +8,9 @@ namespace SamuraiOmen
 {
     public class Storyline
     {
-
+       public void Start()
+        {
+            Console.WriteLine("Welcome to Samurai Omen!");
+        }
     }
 }
