@@ -29,6 +29,7 @@ namespace SamuraiOmen
         public List<string> Items { get; set; }
 
 
+
         public void CreateSamurai(string name)
         {
             Items = new List<string>();

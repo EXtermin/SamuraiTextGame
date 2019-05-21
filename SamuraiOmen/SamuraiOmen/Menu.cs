@@ -20,34 +20,29 @@ namespace SamuraiOmen
             Console.WriteLine("1. Check inventory/Equipment", player.Name);
             Console.WriteLine("2. Rest (Regain health,stamina)", player.Name);
             Console.WriteLine("3. Battle");
+            Console.WriteLine("4. Shop");
             Console.WriteLine("\n9. Save");
             Console.WriteLine("0. Exit");
             string decision = Console.ReadLine();
             SaveMenu(player, decision);
             if (decision == "1")
             {
-                Console.Clear();
-                Menu Menu = new Menu();
-
-                Console.WriteLine("Backpack:");
-                player.Items.Add("Weapon place holder 1");
-                player.Items.Add("Weapon place holder 2");
-                for (int i = 0; i < player.Items.Count; i++)
-                {
-                    Thread.Sleep(500);
-                    Console.WriteLine(player.Items[i]);
-                }
-                Thread.Sleep(1000);
-                Console.WriteLine("0. Back", player.Name);
+                Inventory inventory = new Inventory();
+                inventory.CheckInventory(player, decision);
+                Console.WriteLine("\n0. Back", player.Name);
                 decision = Console.ReadLine();
-                if(decision == "0")
+                if (decision == "0")
                 {
                     Console.Clear();
-                    Menu.MainMenu(player);
+                    MainMenu(player);
                 }
                 else
                 {
+                    Console.Clear();
                     Console.WriteLine("This is not an option");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    MainMenu(player);
                 }
 
             }
@@ -63,6 +58,13 @@ namespace SamuraiOmen
                 Console.ReadKey();
                 Console.Clear();
                 MainMenu(player);
+            }
+            else if (decision == "4")
+            {
+                Console.Clear();
+                player.GoldCoins += 40;
+                Shop shop = new Shop();
+                shop.ShopMenu(player);
             }
             else
             {
