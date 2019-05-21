@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace SamuraiOmen
 {
-    class Program
+    class Shop
     {
-        static void Main(string[] args)
-        {
-            Storyline Story = new Storyline();
-            Story.start();
-        }
+        public List<string> shopItems { get; set; }
     }
 }
