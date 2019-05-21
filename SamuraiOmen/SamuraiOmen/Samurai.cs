@@ -29,9 +29,10 @@ namespace SamuraiOmen
         public List<string> Items { get; set; }
 
 
-
         public void CreateSamurai(string name)
         {
+            Items = new List<string>();
+
             Name = name;
 
             Health = 100;
@@ -49,6 +50,7 @@ namespace SamuraiOmen
             HeldItem = "Basic Fists";
             ArmourStats = 10;
             GoldCoins = 0;
+
         }
     }
 }

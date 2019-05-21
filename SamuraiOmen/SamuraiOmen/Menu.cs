@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SamuraiOmen
 {
     class Menu
     {
+
         public void MainMenu(Samurai player)
         {
             Console.WriteLine("Name: {0}", player.Name);
@@ -24,6 +26,29 @@ namespace SamuraiOmen
             SaveMenu(player, decision);
             if (decision == "1")
             {
+                Console.Clear();
+                Menu Menu = new Menu();
+
+                Console.WriteLine("Backpack:");
+                player.Items.Add("Weapon place holder 1");
+                player.Items.Add("Weapon place holder 2");
+                for (int i = 0; i < player.Items.Count; i++)
+                {
+                    Thread.Sleep(500);
+                    Console.WriteLine(player.Items[i]);
+                }
+                Thread.Sleep(1000);
+                Console.WriteLine("0. Back", player.Name);
+                decision = Console.ReadLine();
+                if(decision == "0")
+                {
+                    Console.Clear();
+                    Menu.MainMenu(player);
+                }
+                else
+                {
+                    Console.WriteLine("This is not an option");
+                }
 
             }
             else if (decision == "2")

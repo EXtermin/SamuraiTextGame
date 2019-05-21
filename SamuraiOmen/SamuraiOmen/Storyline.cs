@@ -19,9 +19,9 @@ namespace SamuraiOmen
                 "This is a Text game made by Iron Sword Studios \n" +
                 "We hope you enjoy playing our game!");
 
-            Thread.Sleep(1500);
+            Thread.Sleep(00);
             Console.WriteLine("\n \n Samurai Omen......");
-            Thread.Sleep(3000);
+            Thread.Sleep(000);
             Console.Clear();
             Console.WriteLine("Enter your name:");
             player.CreateSamurai(Console.ReadLine());
@@ -29,27 +29,27 @@ namespace SamuraiOmen
             Console.Clear();
             Console.WriteLine("Creating Samurai 0%");
             Console.WriteLine("...............");
-            Thread.Sleep(1000);
+            Thread.Sleep(00);
             Console.Clear();
             Console.WriteLine("Creating Samurai 20%");
             Console.WriteLine("|||............");
-            Thread.Sleep(4000);
+            Thread.Sleep(000);
             Console.Clear();
             Console.WriteLine("Creating Samurai 40%");
             Console.WriteLine("|||||||..........");
-            Thread.Sleep(3000);
+            Thread.Sleep(00);
             Console.Clear();
             Console.WriteLine("Creating Samurai 55%");
             Console.WriteLine("||||||||||.......");
-            Thread.Sleep(5000);
+            Thread.Sleep(00);
             Console.Clear();
             Console.WriteLine("Creating Samurai 85%");
             Console.WriteLine("||||||||||||||...");
-            Thread.Sleep(5000);
+            Thread.Sleep(00);
             Console.Clear();
             Console.WriteLine("Creating Samurai 100%");
             Console.WriteLine("|||||||||||||||||");
-            Thread.Sleep(1000);
+            Thread.Sleep(000);
             Console.Clear();
             Console.WriteLine("Samurai created, enjoy your adventure!");
             //Console.WriteLine("{0} {1} {2} {3} {4} {5}",player.Health, player.HeldItem, player.MaxBasicDamage, player.MaxStamina, player.power, player.Name);

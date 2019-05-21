@@ -12,3 +12,10 @@ D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\SamuraiOmen
 D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.csproj.CoreCompileInputs.cache
 D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.exe
 D:\wamp64\www\EigenProjecten\SamuraiOmen\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.pdb
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\bin\Debug\SamuraiOmen.exe.config
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\bin\Debug\SamuraiOmen.exe
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\bin\Debug\SamuraiOmen.pdb
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.csprojAssemblyReference.cache
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.csproj.CoreCompileInputs.cache
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.exe
+D:\Documents\Hobby\SamuraiTextGame\SamuraiOmen\SamuraiOmen\obj\Debug\SamuraiOmen.pdb
