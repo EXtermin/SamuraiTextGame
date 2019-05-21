@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SamuraiOmen.Models;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,19 +11,32 @@ namespace SamuraiOmen
 {
     class Shop
     {
-        public List<string> ShopItems { get; set; }
+        private List<Item> ShopItems = new List<Item>();
+        public List<int> ShopPrices { get; set; }
 
+        public void CreateshoppingItems()
+        {
+            Items items = new Items();
+            ShopItems.Add(items.CreateItem("Katana", 20));
+            ShopItems.Add(items.CreateItem("Health-pack", 10));
+            ShopItems.Add(items.CreateItem("Stamina-pack", 20));
+            ShopItems.Add(items.CreateItem("Helmet", 20));
+            ShopItems.Add(items.CreateItem("Breastplate", 20));
+            ShopItems.Add(items.CreateItem("Pants", 20));
+            ShopItems.Add(items.CreateItem("Boots", 50));
+        }
         public void ShopMenu(Samurai player)
         {
             Menu menu = new Menu();
+            CreateshoppingItems();
             Console.WriteLine("Welcome to the shop!");
-            Console.WriteLine("Your current gold coins is: {0}g", player.GoldCoins);
-            Console.WriteLine("\n1. Katana        - 20g");
-            Console.WriteLine("2. Health-pack   - 10g");
-            Console.WriteLine("3. Stamina-pack  - 15g");
-            Console.WriteLine("4. Helmet        - 35g");
-            Console.WriteLine("5. Breastplate   - 45g");
-            Console.WriteLine("6. Pants         - 25g");
+            Console.WriteLine("Your current gold coins is: {0}g\n", player.GoldCoins);
+            int i = 0;
+            foreach (var item in ShopItems)
+            {
+                Console.WriteLine("{0}. {1} - {2}g", i , item.Name, item.Price);
+                i++;
+            }
             Console.WriteLine("\n \n0. Back");
             string decision = Console.ReadLine();
             if(decision == "1")

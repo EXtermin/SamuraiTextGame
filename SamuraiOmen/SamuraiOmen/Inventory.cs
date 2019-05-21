@@ -20,28 +20,53 @@ namespace SamuraiOmen
                 {
                     Console.WriteLine("\n{0}. -{1}", i, player.Items[i]);
                 }
+                Console.WriteLine("\n0. Back", player.Name);
+                decision = Console.ReadLine();
+                if (decision == "0")
+                {
+                    Console.Clear();
+                    Menu.MainMenu(player);
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("This is not an option");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    CheckInventory(player, decision);
+                }
             }
             else
             {
                 Console.WriteLine("\nNo items are in your inventory");
+                Console.WriteLine("\n0. Back", player.Name);
+                decision = Console.ReadLine();
+                if (decision == "0")
+                {
+                    Console.Clear();
+                    Menu.MainMenu(player);
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("This is not an option");
+                    Thread.Sleep(1000);
+                    Console.Clear();
+                    CheckInventory(player, decision);
+                }
+            }
+            
 
-            }
-            Console.WriteLine("\n0. Back", player.Name);
-            decision = Console.ReadLine();
-            if (decision == "0")
-            {
-                Console.Clear();
-                Menu.MainMenu(player);
-            }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine("This is not an option");
-                Thread.Sleep(1000);
-                Console.Clear();
-                Menu.MainMenu(player);
-            }
+        }
 
+        public void EquipItem(Samurai player, string Item)
+        {
+
+            player.HeldWeapon = Item;
+            player.HeldFoot = Item;
+            player.HeldHead = Item;
+            player.HeldLegs = Item;
+            player.HeldTorso = Item;
         }
     }
 }

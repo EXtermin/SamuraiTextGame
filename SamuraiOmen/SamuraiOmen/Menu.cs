@@ -12,12 +12,16 @@ namespace SamuraiOmen
 
         public void MainMenu(Samurai player)
         {
-            Console.WriteLine("Name: {0}", player.Name);
-            Console.WriteLine("Health: {0}/{1}", player.Health, player.MaxHealth);
-            Console.WriteLine("Stamina: {0}/{1}", player.Stamina, player.MaxStamina);
-            Console.WriteLine("Gold: {0}", player.GoldCoins);
-            Console.WriteLine("Held Item: {0}", player.HeldItem);
-            Console.WriteLine("1. Check inventory/Equipment", player.Name);
+            Console.WriteLine(" Name: {0}", player.Name);
+            Console.WriteLine(" Health: {0}/{1}", player.Health, player.MaxHealth);
+            Console.WriteLine(" Stamina: {0}/{1}", player.Stamina, player.MaxStamina);
+            Console.WriteLine(" Gold: {0}", player.GoldCoins);
+            Console.WriteLine("\nHeld Weapon: {0}", player.HeldWeapon);
+            Console.WriteLine("Head: {0}", player.HeldHead);
+            Console.WriteLine("Torso: {0}", player.HeldTorso);
+            Console.WriteLine("Legs: {0}", player.HeldLegs);
+            Console.WriteLine("Foot: {0}", player.HeldFoot);
+            Console.WriteLine("\n1. Check inventory/Equipment", player.Name);
             Console.WriteLine("2. Rest (Regain health,stamina)", player.Name);
             Console.WriteLine("3. Battle");
             Console.WriteLine("4. Shop");
@@ -29,22 +33,6 @@ namespace SamuraiOmen
             {
                 Inventory inventory = new Inventory();
                 inventory.CheckInventory(player, decision);
-                Console.WriteLine("\n0. Back", player.Name);
-                decision = Console.ReadLine();
-                if (decision == "0")
-                {
-                    Console.Clear();
-                    MainMenu(player);
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.WriteLine("This is not an option");
-                    Thread.Sleep(1000);
-                    Console.Clear();
-                    MainMenu(player);
-                }
-
             }
             else if (decision == "2")
             {

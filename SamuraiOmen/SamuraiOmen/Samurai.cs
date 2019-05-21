@@ -21,13 +21,20 @@ namespace SamuraiOmen
         public int BasicDamage { get; set; }
         public int MaxBasicDamage { get; set; }
 
-        public string HeldItem { get; set; }
+        public string HeldWeapon { get; set; }
+
+        public string HeldHead { get; set; }
+
+        public string HeldTorso { get; set; }
+
+        public string HeldLegs { get; set; }
+        public string HeldFoot { get; set; }
+
         public int ArmourStats { get; set; }
 
         public int GoldCoins { get; set; }
 
         public List<string> Items { get; set; }
-
 
 
         public void CreateSamurai(string name)
@@ -48,7 +55,11 @@ namespace SamuraiOmen
             BasicDamage = 2;
             MaxBasicDamage = 100;
 
-            HeldItem = "Basic Fists";
+            HeldWeapon = "Basic Fists";
+            HeldHead = "None";
+            HeldTorso = "Ragged Shirt";
+            HeldLegs = "Ragged Pants";
+            HeldFoot = "None";
             ArmourStats = 10;
             GoldCoins = 0;
 
